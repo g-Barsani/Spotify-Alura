@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    border: 2px solid rgb(21, 65, 184);
+}
+
+.searchbar {
+    border: 2px solid rgb(140, 15, 151);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#search {
+    border: 2px solid rgb(216, 198, 40); /* Substitua "green" pela cor desejada */
+}
+
+#profile {
+    border: 2px solid rgb(216, 198, 40); /* Substitua "orange" pela cor desejada */
+}
+
+main {
+    border: 2px solid rgb(52, 153, 21);
+    
+}
+
+footer {
+    border: 2px solid rgb(235, 9, 47); /* Substitua "pink" pela cor desejada */
+}
+
+.left{
+    border: 2px solid rgb(9, 235, 197);
+    width: 8%;
+    margin: 0;
+    padding: 0;
+}
+
+.right{
+    border: 2px solid rgb(201, 97, 12);
+    width: 92%;
+    margin: 0;
+    padding: 0;
+    
+}
+.up{
+    height: 87%;
+}
+
+.down{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main{
+  
+    height: 100%;
+}
+
+
+
+body{
+    background-color: rgb(77, 74, 74);
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    margin: 0;
+}
