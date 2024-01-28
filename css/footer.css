@@ -1,0 +1,109 @@
+.upper-footer {
+    display: flex;
+    height: 60%;
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    /* padding-top too uncouple upper-footer from its parent div*/
+    padding-top: 2rem;
+
+    justify-content: space-between;
+}
+
+.upper-footer ul{
+    color: #848484;
+}
+
+.upper-footer ul a:hover{
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.upper-footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.upper-footer label{
+    font-weight: bold;
+
+}
+
+.banana {
+    /* background-color: pink; */
+    height: 100%;;
+    display: flex;
+    gap: 8rem;
+    align-items: left; /* Align items vertically in the center */
+}
+
+.social-media {
+    display: flex;
+    align-items: right;
+    gap: 1rem
+}
+
+.social-media svg {
+    /* Turn the dark icons into white ones */
+    filter: invert(1);
+}
+
+.bottom-footer {
+    display: flex;
+    font-size: 14px;
+    height: 40%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 2rem;
+}
+
+.bottom-footer .footer-left ul{
+    display: flex;
+    gap: 2rem;
+    color: #848484;
+}
+
+.bottom-footer .footer-left ul a:hover{
+border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.bottom-footer .footer-right{
+    color: #848484;
+}
+a:hover {
+    color: #FFFFFF;
+}
+
+.footer-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #292929;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    background-color: #727272;
+}
+
+.right-upperfooter {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    /* border: 2px solid rgb(235, 9, 47); Substitua "pink" pela cor desejada */
+    height: 30rem;
+    background-color: #121212;
+    /* background-color: pink; */
+    border-radius: 1rem;
+}

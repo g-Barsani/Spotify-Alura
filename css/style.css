@@ -16,87 +16,8 @@ body{
     font-family: var(--font-family, CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
 }
 
-.goblify-label {
-    font-weight: 900;
-    font-size: x-large;
-    background-image: linear-gradient(to right, #8C52FF, #03FA6E);
-    color: transparent;
-    -webkit-background-clip: text; /* -webkit- and -moz- prefixes allow 
-    background clip to work on any browser */
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
-#logo-searchbar {
-    margin-left: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-#logo {
-    width: 4rem;
-    height: 4rem;
-
-    border-radius: 50%;;
-}
-
-input {
-    color: #75756D;
-    
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI mOLTJ2mxkzHJj6Y9_na_" viewBox="0 0 16 16"><path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path></svg>') no-repeat scroll;
-    background-color: #242424;
-    padding-left: 5rem;
-    
-    /* <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI mOLTJ2mxkzHJj6Y9_na_" viewBox="0 0 16 16"><path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path></svg> */
-    
-    border: none;
-    
-    height: 2.56rem;
-    width: 23rem;
-
-    
-}
-
-.install{
-    color: #303030;
-    height: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    
-}
-
-.install:hover{
-    font-size: 1.05rem;
-    transition: 0.5s;
-}
-
-.signin{
-    background-color:#FFFFFF; 
-    border-style: none;
-    width: 7rem;
-    height: 3rem;
-    border-radius: 20rem;
-    font-weight: bold;
-    font-size: 1rem;
-   
-}
-
-.signin:hover{
-    background-color: #F6F6F6;
-    height: 3.1rem;
-    width: 7.1rem;
-    font-size: 1.05rem;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#inverted-icon {
-    filter: invert(1);
-}
-
-input::placeholder {
-    text-align: start;
+a {
+    draggable: "false";
 }
 
 button #sidebar {
@@ -105,11 +26,10 @@ button #sidebar {
 }
 
 #home-icon, #search-icon-sidebar {
-    /* filter: invert(0.9); */
     border: none;
-
     width: 1.8rem;
 }
+
 
 input {
     border-radius: 1rem;
@@ -122,7 +42,6 @@ input {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
 }
 
 .upper-sidebar {
@@ -132,7 +51,6 @@ input {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    /* margin: 1.5rem 1rem rem 1rem; */
 
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem 1rem 1rem 1rem;
@@ -142,10 +60,10 @@ input {
 }
 
 .upper-sidebar a:hover{
- color: #F0F8FF;
  cursor: pointer;
  transition: 0.5s;
  
+ filter: invert(1);
 }
 
 .sidebar a{
@@ -157,28 +75,33 @@ input {
     color: #B3B3B3;
 }
 
-
 .upper-sidebar svg {
     width: 2rem;
     height: 2rem;
-
-    filter: invert(0.7);
-}
-
-#search-icon {
-    filter: invert(1);
 }
 
 .upper-sidebar svg:hover {
-    filter: invert(1);
     cursor: pointer;
     transition: 0.5s;
 }
 
+.home label, .search label {
+    cursor: pointer;    
+    color: #000000;
+}
+
+.home {
+    filter: invert(0.7);
+}
+
+.search {
+    filter: invert(1);
+}
+
 .yourLibrary{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 8rem;
 }
 
 .plus{
@@ -203,26 +126,25 @@ input {
     margin: 0;
 }
 
-#library{
+#library {
     filter: invert(0.7);   
     display: flex;
     gap: 0.5rem;
     align-items: center;
     color: #000000;
-    
 }
 
-#library label{
-    /* font-size: 16px; */
+#library label {
     font-weight: bold;
+    cursor: pointer;
 }
 
-#library:hover{
+#library:hover {
     filter: invert(1);
     transition: 0.5s;
 }
 
-#library svg{
+#library svg {
     width: 2rem;
     height: 2rem;
 }
@@ -232,13 +154,16 @@ input {
     height: 100%;
 
     align-items: center;
-    /* margin: 1.5rem 1rem rem 1rem; */
 
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem 1rem 1rem 1rem;
     gap: 1rem;
 
     border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .bottom-sidebar p {
@@ -247,50 +172,48 @@ input {
 
 }
 
-
-.searchbar {
-    /* border: 2px solid rgb(140, 15, 151); */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 10%;
+.create-playlist, .browse-podcasts {
+    background-color: #242424;
+    border-radius: 1rem;
     width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: #090909;
+    padding: 1rem;
 }
 
-#search {
-    
+.create-playlist label, .browse-podcasts label {
+    font-weight: bolder;
 }
 
-#profile {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 2rem;
-    width: 25%;
-    margin-right: 1.5rem;
-  
+.create-playlist button, .browse-podcasts button {
+    background-color:#FFFFFF; 
+    border-style: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 20rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
+.create-playlist button:hover, .browse-podcasts button:hover {
+    background-color: #F6F6F6;
+    height: 3.1rem;
+    width: 10.1rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ---------------------------------------------- */
 
 main {
     /* border: 2px solid rgb(52, 153, 21); */
     /* margin-top: 5%; */
     padding: 2rem;
-
-
 }
 
-footer {
-    /* border: 2px solid rgb(235, 9, 47); Substitua "pink" pela cor desejada */
-    height: 30rem;
-    background-color: #121212;
-    /* background-color: pink; */
-    border-radius: 1rem;
-}
-
-.left{
+.left {
     /* border: 2px solid rgb(9, 235, 197); */
     width: 20%;
     margin: 0;
@@ -298,24 +221,21 @@ footer {
     position: fixed;
 }
 
-.right{
+.right {
     /* border: 2px solid rgb(201, 97, 12); */
     width: 100%;
     margin: 0 0 0 20%;
     padding: 0;
 
-
     background-color: #121212;
     border-radius: 0.2rem;
-
-
 }
-.up{
+.up {
     height: 90%;
     width: 100;
 }
 
-.down{
+.down {
     /*! position: fixed; */
     bottom: 0;
     width: 100%;
@@ -323,129 +243,6 @@ footer {
     border-radius: 1rem;
 }
 
-main{
-
+main {
     height: 90%;
 }
-
-.upper-footer{
-    display: flex;
-    height: 60%;
-    font-size: 16px;
-    margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
-    /* padding-top too uncouple upper-footer from its parent div*/
-    padding-top: 2rem;
-
-    justify-content: space-between;
-
-
-}
-
-.upper-footer ul{
-    color: #848484;
-}
-
-.upper-footer ul a:hover{
-    border-bottom: 1px solid #FFFFFF;
-    cursor: pointer;
-}
-
-.upper-footer div{
-    /* display: flex;
-    flex-direction: column;
-    gap: 1rem; */
-}
-
-.upper-footer div ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-
-
-.upper-footer label{
-    font-weight: bold;
-
-}
-
-
-.banana {
-    /* background-color: pink; */
-    height: 100%;;
-    display: flex;
-    gap: 8rem;
-    align-items: left; /* Align items vertically in the center */
-}
-
-
-
-
-.social-media {
-    display: flex;
-    align-items: right;
-    gap: 1rem
-
-
-
-}
-
-.social-media svg {
-    /* Turn the dark icons into white ones */
-    filter: invert(1);
-}
-
-.bottom-footer {
-    display: flex;
-    font-size: 14px;
-    height: 40%;
-    justify-content: space-between;
-    /* gap: 50px; */
-    margin-bottom: 2rem;
-
-    margin-left: 3rem;
-    margin-right: 3rem;
-    border-top: 1px solid #2a2a2a;
-    padding-top: 2rem;
-}
-
-.bottom-footer .footer-left ul{
-    display: flex;
-    gap: 2rem;
-    color: #848484;
-}
-
-.bottom-footer .footer-left ul a:hover{
-border-bottom: 1px solid #FFFFFF;
-    cursor: pointer;
-}
-
-.bottom-footer .footer-right{
-    color: #848484;
-}
-a:hover {
-    color: #FFFFFF;
-}
-
-.footer-btn {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    background-color: #292929;
-    border: none;
-    cursor: pointer;
-}
-
-.footer-btn:hover {
-    background-color: #727272;
-}
-
-.right-upperfooter {
-    display: flex;
-    flex-direction: column;
-}
-
