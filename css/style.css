@@ -16,10 +16,6 @@ body{
     font-family: var(--font-family, CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
 }
 
-a {
-    draggable: "false";
-}
-
 button #sidebar {
     background-color: transparent;
     border: none;
@@ -100,8 +96,9 @@ input {
 
 .yourLibrary{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8rem;
+    gap: 1rem;
 }
 
 .plus{
@@ -109,9 +106,9 @@ input {
     height: 1.5rem;
     border-radius: 50%;
     border-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     cursor: pointer;
     filter: invert(1);
 }
@@ -211,6 +208,35 @@ main {
     /* border: 2px solid rgb(52, 153, 21); */
     /* margin-top: 5%; */
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    overflow-y: scroll;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 1rem;
+}
+
+.genres{
+    background-color: #9C0827;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.genres img{
+    /* margin-left: 3.2rem;
+    margin-top: 2rem; */
+    width: 7rem;
+    transform: translate(60%, 30%) rotate(30deg);
+    
 }
 
 .left {

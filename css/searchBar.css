@@ -81,6 +81,7 @@ input::placeholder {
     height: 10%;
     width: 100%;
     position: sticky;
+    z-index: 1000;
     top: 0;
     background-color: #090909;
 }
