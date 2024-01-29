@@ -247,14 +247,14 @@ main {
   width: 20%;
   margin: 0;
   padding: 0;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .right {
   /* border: 2px solid rgb(201, 97, 12); */
   /* position: fixed; */
   width: 80%;
-  margin: 0 0 0 20%;
+  margin: 0 0 0 0;
   padding: 0;
   overflow-y: scroll;
   background-color: #121212;
