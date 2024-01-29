@@ -42,7 +42,7 @@ input {
     filter: invert(1);
 }
 
-.signup{
+ .signup{
     color: #303030;
     height: 1rem;
     font-size: 1rem;
@@ -51,7 +51,7 @@ input {
 }
 
 .signin{
-    background-color:#FFFFFF; 
+    background-color:#ffffff; 
     border-style: none;
     width: 7rem;
     height: 3rem;
@@ -60,14 +60,14 @@ input {
     font-size: 1rem;
 }
 
-.signin:hover{
+ .signin:hover{
     background-color: #F6F6F6;
     height: 3.1rem;
     width: 7.1rem;
     font-size: 1.05rem;
     cursor: pointer;
     transition: 0.5s;
-}
+} 
 
 input::placeholder {
     text-align: start;
@@ -79,8 +79,8 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
     height: 10%;
-    width: 100%;
-    position: sticky;
+    width: 80%;
+    position: fixed;
     z-index: 1000;
     top: 0;
     background-color: #090909;

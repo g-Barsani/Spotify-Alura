@@ -3,7 +3,7 @@ export default function Searchbar() {
       <div>
         <form className="searchbar">
           <div id="logo-searchbar">
-            <img id="logo" src="src/goblenfy.png" alt="Goblify logo" />
+          <img id="logo" src="/goblify-logo.png" alt="Goblify logo" />
             <label className="goblify-label" htmlFor="searchInput">Goblify</label>
             <div id="search">
               <input type="search" id="searchInput" placeholder="What do you want to listen to" />
@@ -13,6 +13,7 @@ export default function Searchbar() {
           <div id="profile">
             <a href="" className="signup">Sign up</a>
             <button className="signin">Log in</button>
+            
           </div>
         </form>
       </div>

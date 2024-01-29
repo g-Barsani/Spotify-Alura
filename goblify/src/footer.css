@@ -1,6 +1,6 @@
 .upper-footer {
     display: flex;
-    height: 60%;
+    height: 50%;
     font-size: 16px;
     margin-top: 2rem;
     margin-left: 3rem;
@@ -104,6 +104,7 @@ footer {
     /* border: 2px solid rgb(235, 9, 47); Substitua "pink" pela cor desejada */
     height: 30rem;
     background-color: #121212;
+    position: relative;
     /* background-color: pink; */
     border-radius: 1rem;
 }

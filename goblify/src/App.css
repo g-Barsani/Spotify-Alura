@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body{
+.App{
   background-color: #000000;
   color: aliceblue;
   display: flex;
@@ -206,18 +206,21 @@ filter: invert(1);
 
 main {
   /* border: 2px solid rgb(52, 153, 21); */
-  /* margin-top: 5%; */
+   margin-top: 8%;
   padding: 2rem;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  gap: 5%;
-  overflow-y: scroll;
+  gap: 2rem;
+  /* position: relative; */
+  /* overflow-y: scroll; */
 }
 
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   gap: 1rem;
+  /* position: ab; */
 }
 
 .genres{
@@ -249,16 +252,19 @@ main {
 
 .right {
   /* border: 2px solid rgb(201, 97, 12); */
-  width: 100%;
+  /* position: fixed; */
+  width: 80%;
   margin: 0 0 0 20%;
   padding: 0;
-
+  overflow-y: scroll;
   background-color: #121212;
   border-radius: 0.2rem;
+
 }
 .up {
-  height: 90%;
+  height: auto;
   width: 100;
+  /* position: relative; */
 }
 
 .down {
@@ -267,8 +273,4 @@ main {
   width: 100%;
   height:50%;
   border-radius: 1rem;
-}
-
-main {
-  height: 90%;
 }
