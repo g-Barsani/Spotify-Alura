@@ -1,0 +1,75 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Make sure the form elements are consistent */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Remove anchor text decoration and color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove table border spacing and collapse */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Responsive images and other embedded content */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,25 +1,56 @@
-import logo from './logo.svg';
+import React from 'react';
+// import logo from './logo.svg';
+import './css.reset.css'
 import './App.css';
+import './searchBar.css';
+import './footer.css'
+
+
+// ----------------------------------------------------
+import Sidebar from './components/Sidebar';
+import Searchbar from './components/Searchbar';
+import BrowseAll from './components/Browseall';
+import Card from './components/Card';
+// ----------------------------------------------------
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="left">
+        <Sidebar/> 
+      </ div>
+
+      <div className="right">
+        <div className="up"> 
+          <Searchbar/>  
+          <main>
+            <BrowseAll content="Browse All"></BrowseAll>
+            <div className="cards">
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+              <Card genre={{ content: "Samba" }} image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250" />
+            </div>
+
+
+
+          </main>
+        </div>
+      </div>
+    </ div>
+
+
   );
 }
-
 export default App;

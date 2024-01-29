@@ -1,0 +1,14 @@
+<form className="searchbar">
+    <div id="logo-searchbar">
+        <img id="logo" src="assets\img\goblenfy.png" alt="Goblify logo">
+        <label className="goblify-label" htmlFor="">Goblify</label>
+        <div id="search">
+            <input type="search" placeholder="What do you want to listen to?">
+        </div>
+    </div>
+
+    <div id="profile">
+        <a href="" className="signup">Sign up</a>
+        <button className="signin">Log in</button>
+    </div>
+</form>
