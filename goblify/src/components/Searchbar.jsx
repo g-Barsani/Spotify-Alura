@@ -6,7 +6,7 @@ export default function Searchbar() {
           <img id="logo" src="/goblify-logo.png" alt="Goblify logo" />
             <label className="goblify-label" htmlFor="searchInput">Goblify</label>
             <div id="search">
-              <input type="search" id="searchInput" placeholder="What do you want to listen to" />
+              <input type="search" id="searchInput" placeholder="What do you want to listen to?" />
             </div>
           </div>
   
