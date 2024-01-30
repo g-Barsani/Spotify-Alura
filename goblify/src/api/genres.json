@@ -1,16 +1,94 @@
 {
     "genres": [
       {
-        "title": "Samba",
-        "urlImage": "https://i.scdn.co/image/ab67616d000048518ad2adfa59683b9c8ace96c1"
+        "title": "Podcasts",
+        "urlImage": "https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa",
+        "color": "#006450"
       },
       {
-        "title": "Rock",
-        "urlImage": "https://i.scdn.co/image/ab67616d000048518ad2adfa59683b9c8ace96c1"
+        "title": "Live Events",
+        "urlImage": "https://i.scdn.co/image/ab67fb8200005caf341265d27be641506e56c346",
+        "color": "#8400E7"
       },
       {
-        "title": "Podcast",
-        "urlImage": "https://i.scdn.co/image/ab6765630000f68dbe16453ea911dde3dcbdbea6"
+        "title": "Made For You",
+        "urlImage": "https://i.scdn.co/image/ab67616d000048518ad2adfa59683b9c8ace96c1",
+        "color": "#1E3264"
+      },
+      {
+        "title": "New Releases",
+        "urlImage": "https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg",
+        "color": "#E8115B"
+      },
+      {
+        "title": "Summer",
+        "urlImage": "https://i.scdn.co/image/ab67616d00004851167da3d8d7e504aa26076b60",
+        "color": "#27856A"
+      },
+      {
+        "title": "Brazil",
+        "urlImage": "https://i.scdn.co/image/ab67fb8200005caf8dec632effd9735fa8aba06e",
+        "color": "#FFC864"
+      },
+      {
+        "title": "Sertanejo",
+        "urlImage": "https://i.scdn.co/image/ab67656300005f1fb02b40e89324364b8b5f75b2",
+        "color": "#537AA1"
+      },
+      {
+        "title": "In the car",
+        "urlImage": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+        "color": "#2D46B9"
+      },
+      {
+        "title": "Podcast Charts",
+        "urlImage": "https://i.scdn.co/image/ab67616d00001e0204047acfa8e18bcc64832359",
+        "color": "#0D73EC"
+      }, 
+      {
+        "title": "Brazil Podcast Releases",
+        "urlImage": "https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f",
+        "color": "#8E66AC"
+      },
+      {
+        "title": "Brazilian Creators",
+        "urlImage": "https://i.scdn.co/image/ab67616d00004851dfd58e9c248fdb068f1412c1",
+        "color": "#E61E32"
+      },
+      {
+        "title": "Only on Spotify Brazil",
+        "urlImage": "https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg",
+        "color": "#1E3264"
+      },
+      {
+        "title": "Charts",
+        "urlImage": "https://i.scdn.co/image/ab67fb8200005caf3bad7100618b22db3d6477c7",
+        "color": "#8D67AB"
+      },
+      {
+        "title": "Pop",
+        "urlImage": "https://i.scdn.co/image/ab67616d000048516f14ada541563cb84c5299b8",
+        "color": "#148A08"
+      },
+      {
+        "title": "Hip-Hop",
+        "urlImage": "https://i.scdn.co/image/ab67616d00004851e772ebcdcd9492a3fa94dd0b",
+        "color": "#503750"
+      },
+      {
+        "title": "Samba & Pagode",
+        "urlImage": "https://i.scdn.co/image/ab67616d0000485180d9d6384f5052b35e88966b",
+        "color": "#006450"
+      },
+      {
+        "title": "Discover",
+        "urlImage": "https://i.scdn.co/image/ab67616d00001e028c34ab44a2df5406c7026fc2",
+        "color": "#8D67AB"
+      },
+      {
+        "title": "MPB",
+        "urlImage": "https://i.scdn.co/image/ab67616d00001e021de102643742b474cc026110",
+        "color": "#A0C3D2"
       }
     ]
 }
