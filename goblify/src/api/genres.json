@@ -1,0 +1,16 @@
+{
+    "genres": [
+      {
+        "title": "Samba",
+        "urlImage": "https://i.scdn.co/image/ab67616d000048518ad2adfa59683b9c8ace96c1"
+      },
+      {
+        "title": "Rock",
+        "urlImage": "https://i.scdn.co/image/ab67616d000048518ad2adfa59683b9c8ace96c1"
+      },
+      {
+        "title": "Podcast",
+        "urlImage": "https://i.scdn.co/image/ab6765630000f68dbe16453ea911dde3dcbdbea6"
+      }
+    ]
+}
