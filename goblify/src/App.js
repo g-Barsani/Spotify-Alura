@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // ---------------------------------------------------- CSS
 import './css.reset.css'
@@ -23,22 +23,31 @@ const { genres } = jsonData;
 
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter genres based on the search query
+  const filteredGenres = genres.filter((genre) =>
+    genre.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="App">
       <div className="left">
-        <Sidebar/> 
-      </ div>
+        <Sidebar />
+      </div>
 
       <div className="right">
-        <div className="up"> 
-          <Searchbar/> 
+        <div className="up">
+          <Searchbar
+            // Pass setSearchQuery as a prop to update the searchQuery state
+            onSearch={(query) => setSearchQuery(query)}
+          />
           <main>
             <BrowseAll content="Browse All"></BrowseAll>
             <div className="cards">
-            {/* Map through each genre and create a Card component */}
-            {genres.map((genre) => (
+              {filteredGenres.map((genre) => (
                 <Card
-                  // key={index} // Provide a unique key for each iteration
+                  key={genre.id} // Use a unique key for each genre
                   genre={{ content: genre.title }}
                   image={genre.urlImage}
                   color={genre.color}
@@ -48,10 +57,11 @@ function App() {
           </main>
         </div>
         <div className="down">
-          <Footer/>
+          <Footer />
         </div>
       </div>
-    </ div>
+    </div>
   );
 }
+
 export default App;
