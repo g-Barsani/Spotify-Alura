@@ -11,7 +11,7 @@ export default function Searchbar({ onSearch }) {
     <div>
       <form className="searchbar">
         <div id="logo-searchbar">
-          <img id="logo" src="/goblify-logo.png" alt="Goblify logo" />
+          <img id="logo" src="goblify-logo.png" alt="Goblify logo" />
           <label className="goblify-label" htmlFor="searchInput">
             Goblify
           </label>
